@@ -1,19 +1,20 @@
 var read = require('read');
 var fs = require('fs');
 var less = require('less');
+var pack = require('./pack');
 
-var filename;
-var contentsfilesrc;
-var contentsfilepublic;
-//задаем имя файла
-read({ prompt : 'filename: ' }, function (err, fileName) {
-	filename = fileName;
-	//Содержимое файла src
-	var contentsfilesrc = fs.readFileSync('./src/' + filename + '.less', 'utf8');
-	//Содержимое файла public
+console.log(fs.readFileSync('./src/footer.less', 'utf8'))
+var selectFile = function(filename){
+	var contentsfilesrc;
+	contentsfilesrc = fs.readFileSync('./src/' + filename, 'utf8');
 	less.render(contentsfilesrc,function (e, output) {
-	   var writer = fs.createWriteStream('public/'+filename+'.css', {flags: 'w'});
+	   var writer = fs.createWriteStream('public/'+filename.split('.')[0]+'.css', {flags: 'w'});
 	   writer.write(output.css);
 	});
-});
+	//console.log('selectFile'+contentsfilesrc);
+	//if(contentsfilesrc != undefined)setTimeout(pack,300);
+}
+
+module.exports = selectFile;
+
 

@@ -1,5 +1,6 @@
 /*breadcrumb-box*/
 .breadcrumb-box {
+  color: blue;
   background: #f2f2f2;
   overflow: hidden;
 }
@@ -9,7 +10,7 @@
   font-size: 11px;
   line-height: 18px;
   margin: 0;
-  padding: 15px 0;
+  padding: 11px 0;
   list-style: none;
 }
 .breadcrumb-box .breadcrumb li {
@@ -25,12 +26,11 @@
 .breadcrumb-box .breadcrumb .active {
   color: #999;
 }
-/*breadcrumb-box*/
-.breadcrumb-box {
-  background: #f2f2f2;
-  overflow: hidden;
+.header {
+  color: red;
 }
-.breadcrumb-box .breadcrumb {
+/*slide*/
+.slide {
   background: #f2f2f2;
   color: #7f7f7f;
   font-size: 11px;
@@ -38,17 +38,31 @@
   margin: 0;
   padding: 15px 0;
   list-style: none;
+  color: red;
+  margin-left: 23px;
 }
-.breadcrumb-box .breadcrumb li {
-  line-height: 18px;
-  text-shadow: none;
-  display: inline-block;
+/*#top-box*/
+#top-box {
+  background: #0098ca;
+  min-height: 30px;
+  padding: 5px 0;
+  width: 100%;
+  left: 0;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  z-index: 910;
+  -webkit-transition: margin-top 0.2s linear;
+  transition: margin-top 0.2s linear;
 }
-.breadcrumb-box .breadcrumb li:before {
-  content: "/";
-  padding: 0 5px;
-  color: #ccc;
+#top-box .top-navbar {
+  background: none;
+  border: 0 none;
+  border-radius: 0;
+  height: auto;
+  margin: 0;
+  min-height: 31px;
 }
-.breadcrumb-box .breadcrumb .active {
-  color: #999;
+#top-box .top-navbar #customers #customers-trigger {
+  float: left !important;
 }

@@ -1,1 +1,1 @@
-node selectFile
+node main
