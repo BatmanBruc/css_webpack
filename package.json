@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/BatmanBruc/css_webpack#readme",
   "devDependencies": {
+    "clean-css": "^3.4.23",
+    "dateformat": "^2.0.0",
     "less": "^2.7.1",
     "read": "^1.0.7"
   }

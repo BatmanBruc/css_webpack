@@ -1,45 +1,46 @@
 var selectFile = require('./selectFile');
 var fs = require('fs');
+var dateFormat = require('dateformat');
+var now = new Date();
 
 
-var stateDir = {};
-var stateFiles = {};
+
 function resetState(){
-	stateDir = fs.readdirSync(__dirname+'/src');
-	console.log(stateDir);
-	for (var i = 0; i < stateDir.length; i++) {
-		stateFiles[stateDir[i]] = fs.readFileSync('./src/' + stateDir[i], 'utf8');
+	var dir = {};
+	var files = {};
+	for (var i = 0; i < fs.readdirSync(__dirname+'/src').length; i++) {
+		if(fs.readdirSync(__dirname+'/src')[i].split('.')[1] === 'less'){
+			dir[fs.readdirSync(__dirname+'/src')[i]] = fs.readdirSync(__dirname+'/src')[i];
+		}
+	}
+	//console.log(dir);
+	for (var key in dir) {
+		files[key] = fs.readFileSync('./src/' + key, 'utf8');
 		
 	}
+	//console.log({'dir':dir,'Files':files});
+	return {'dir':dir,'files':files};
 }
 
-
-
-resetState();
+var state = resetState();
 
 function func() {
-	var dir = fs.readdirSync(__dirname+'/src');
-	var files = {};
-	for (var i = 0; i < stateDir.length; i++) {
-		files[dir[i]] = fs.readFileSync('./src/' + dir[i], 'utf8');
-	}
+	var updateState = resetState(); 
 
-	for (var i = 0; i < dir.length; i++) {
-		if(stateDir[i] != dir[i]){
-
-			selectFile(dir[i]);
-			resetState();
-
-			console.log('added:'+stateDir[i])
+	for (var key in updateState.dir) {
+		if(!state.dir.hasOwnProperty(key)){
+			selectFile(key);
+			state = resetState();
+			console.log('added: '+key)
+			continue;
 		}
-		if(stateFiles[stateDir[i]] != files[dir[i]]){
-			selectFile(stateDir[i]);
-			resetState();
-
-			console.log('update:'+stateDir[i])
+		if (state.files[key] != updateState.files[key]) {
+			selectFile(key);
+			state = resetState();
+			console.log('update: '+key);
 		}
 	}
-	console.log('monitor');
+	console.log('monitor/'+dateFormat("longTime"));
 	setTimeout(function() {
 		func();
 	},500);
