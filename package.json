@@ -19,7 +19,11 @@
   "devDependencies": {
     "clean-css": "^3.4.23",
     "dateformat": "^2.0.0",
+    "easy-ftp": "^0.3.26",
+    "ftp": "^0.3.10",
+    "jsftp": "^1.5.5",
     "less": "^2.7.1",
-    "read": "^1.0.7"
+    "read": "^1.0.7",
+    "ssh2-sftp-client": "^1.0.5"
   }
 }

@@ -1,0 +1,33 @@
+/*breadcrumb*/
+.breadcrumb-box {
+  background: #f2f2f2;
+  overflow: hidden;
+}
+.breadcrumb-box .breadcrumb {
+  background: #f2f2f2;
+  color: #7f7f7f;
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 15px 0;
+  list-style: none;
+}
+.breadcrumb-box .breadcrumb li {
+  line-height: 17px;
+  text-shadow: none;
+  display: inline-block;
+}
+.breadcrumb-box .breadcrumb li:before {
+  content: "/";
+  padding: 0 5px;
+  color: #ccc;
+}
+.breadcrumb-box .breadcrumb li a {
+  color: #7f7f7f;
+  text-decoration: none;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+.breadcrumb-box .breadcrumb .active {
+  color: #999;
+}

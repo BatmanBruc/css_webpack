@@ -1,0 +1,184 @@
+.header{
+	background: #fff;
+	left: 0;
+	margin: 0;
+	position: fixed;
+	z-index: 870;
+	-webkit-transition: background .2s linear,margin-top .2s linear;
+	transition: background .2s linear,margin-top .2s linear;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	top: 0;
+	min-height: auto;
+	padding: 2px 0;
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+    
+	.logo-box {
+	    display: table;
+    	table-layout: fixed;
+	    @media (min-width: 1200px){
+			    width: 13%;
+			}
+	    .logo{
+	    	a {
+			    display: inline-block;
+			    max-width: 100%;
+			}
+			height: auto;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		    display: table-cell;
+		    max-width: 100%;
+		    vertical-align: middle;
+		    width: 100%;
+		    .logo-img{
+		    	max-height: 100px;
+		    	width: 157px;
+		    }
+	    }
+	}
+	.right-box{
+		@media (min-width: 769px){
+		    width: 80%;
+		}
+		.head{
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	    display: table;
+	    .right-box-wrapper {
+		    padding-top: 10px;
+		    padding-bottom: 10px;
+		    height: auto;
+			display: table-cell;
+			vertical-align: middle;
+			#butt{
+				@media (min-width: 1200px){
+				    width: 26%;
+				}
+				@media (max-width: 992px){
+				    width: 32%;
+				}
+				@media (max-width: 769px){
+				    width: 41%;
+				}
+				.cart-header {
+				    display: inline-block;
+				    font-size: 12px;
+				    margin: 0 -5px 0 -1px;
+				    white-space: normal;
+				}
+				.dropdown-toggle {
+				    border-width: 1px;
+				    border-color: #fff;
+				    border-color: transparent;
+				    border-bottom: 0 none;
+				    color: #1e1e1e;
+				    display: block;
+				    line-height: 22px;
+				    outline: none;
+				    padding: 11px 15px 12px;
+				    position: relative;
+				    text-decoration: none;
+				    text-shadow: none;
+				    -webkit-transition: border-color .4s linear,box-shadow .4s linear,-moz-box-shadow .4s linear,-webkit-box-shadow .4s linear;
+				    transition: border-color .4s linear,box-shadow .4s linear,-moz-box-shadow .4s linear,-webkit-box-shadow .4s linear;
+				    z-index: 891;
+				    .icon {
+					    display: inline-block;
+					    height: 22px;
+					    margin: 0 8px 0 0;
+					    vertical-align: top;
+					    width: 16px;
+					}
+				}
+						
+			}
+			#serch{
+
+				@media (min-width: 769px){
+				    width: 65%;
+				    padding-left: 15px;
+				}
+				@media (max-width: 992px){
+				    width: 59%;
+				    padding-left: 15px;
+				}
+				.navbar-form{
+					margin:0;
+					padding: 10px 15px;
+					@media (min-width: 768px){
+					    width: 100%;
+					    border: 0;
+					    margin-left: 0;
+					    margin-right: 0;
+					    padding-top: 0;
+					    padding-bottom: 0;
+					    -webkit-box-shadow: none;
+					    box-shadow: none;
+					}
+					.input-group {
+					    position: relative;
+					    display: table;
+					    border-collapse: separate;
+					    .form-control {
+					        position: relative;
+						    z-index: 2;
+						    float: left;
+						    width: 100%;
+						    margin-bottom: 0;
+						}
+					}
+				}
+			}
+			#katt{
+				@media (min-width: 992px) {
+				    margin-left: 0px;
+				    margin-top: 0px;
+				    width: 9%;
+				}
+				@media (max-width: 769px) {
+				    margin-left: 23px;
+				    width: 59%;
+				    margin-top: 60px;
+				    float: left !important;
+				}
+				.primary{
+					@media (min-width: 769px){
+					    float: left;
+					    width: 90%;
+					}
+					z-index: 901;
+					.navbar{
+						margin: 0;
+					}
+					.megamenu {
+					    overflow: hidden;
+					    position: static;
+						.sub{
+							display: none;
+						}
+					}
+					li{
+						padding: 3px 4px 0;
+						a{
+							border: 1px solid transparent;
+							color: #1e1e1e;
+							padding: 11px 14px;
+							text-shadow: none;
+							-webkit-transition: all .2s linear;
+							transition: all .2s linear;
+							z-index: 901;
+							position: relative;
+							font-size: 15px;
+    						font-weight: bold;
+						}
+					}
+				}
+			}
+			
+		}
+	} 
+}
