@@ -19,7 +19,6 @@ var pack = function() {
 	}
 
 	var writer = fs.createWriteStream('public/style/style.css', {flags: 'w'});
-	console.log(styleFile);
 	writer.on('finish',function() {
 		var source = fs.readFileSync('./public/style/style.css', 'utf8');;
 		minified = new CleanCSS().minify(source).styles;

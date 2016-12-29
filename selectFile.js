@@ -9,6 +9,7 @@ var selectFile = function(filename){
 	less.render(contentsfilesrc,function (e, output) {
 		if(e){
 			console.log('ERROR:'+e)
+			setTimeout(pack,300);
 			return;
 		}
 	   var writer = fs.createWriteStream('public/'+filename.split('.')[0]+'.css', {flags: 'w'});
@@ -18,7 +19,6 @@ var selectFile = function(filename){
 			console.log('pack');
 		};
 	});
-	console.log('selectFile'+contentsfilesrc);
 	
 }
 

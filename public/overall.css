@@ -1,7 +1,20 @@
+* {
+  border-color: #e1e1e1;
+  border-style: solid;
+  border-width: 0;
+  zoom: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 h5 {
   margin: 0 0 5px;
 }
 body {
+  font-family: 'Arimo', sans-serif;
+  height: 100%;
+  line-height: 1.6;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
   padding-top: 80px !important;
 }
 @media screen and (max-width: 1001px) {
@@ -12,4 +25,45 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+.header .cart-header .dropdown-toggle,
+#footer .newsletter input:focus + .submit,
+.icon,
+.big-icon,
+.big-icon:visited,
+.service .icon,
+.close:hover,
+.close:focus,
+.img-thumbnail:hover .bg-images i:before,
+.box-404 h1,
+.gallery-images:hover .bg-images i:before,
+.features-block .header-box .icon-box,
+.features-block .header-box,
+.sidebar .newsletter input:focus + .submit,
+.sidebar .section .selected .close:hover,
+.package .title a,
+.package .price-box .price,
+.package .price-box .icon,
+.pricing .title a,
+.pricing .options li span,
+.pricing .options li.active,
+.banner-set .next:hover,
+.banner-set .prev:hover,
+.btn.btn-border,
+.btn.btn-border .caret,
+.product-remove:hover {
+  color: #0098ca;
+}
+.phone-header a svg path,
+.search-header a svg path,
+.product .actions a svg path,
+.sidebar .wishlist .add-cart:hover path,
+.header .cart-header .dropdown-toggle .icon svg path,
+.search-active .search-submit svg path,
+.new-checkbox svg polygon,
+.product-bottom .related-products li .button-box .wishlist:hover svg path,
+.jslider .jslider-pointer svg path,
+.rating-box .rating svg polygon,
+.search-result .search-form .search-submit svg path {
+  fill: #0098ca;
 }
