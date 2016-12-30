@@ -1,4 +1,5 @@
 var selectFile = require('./selectFile');
+var cash = require('./cash.js')
 var fs = require('fs');
 var dateFormat = require('dateformat');
 var now = new Date();
@@ -21,8 +22,8 @@ function resetState(){
 	//console.log({'dir':dir,'Files':files});
 	return {'dir':dir,'files':files};
 }
-
-var state = resetState();
+if(cash.getCash() === undefined)var state = resetState();
+else cash.getCash();
 
 function func() {
 	var updateState = resetState(); 
@@ -31,12 +32,14 @@ function func() {
 		if(!state.dir.hasOwnProperty(key)){
 			selectFile(key);
 			state = resetState();
+			cash.setCash(JSON.stringify(state))
 			console.log('added: '+key)
 			continue;
 		}
 		if (state.files[key] != updateState.files[key]) {
 			selectFile(key);
 			state = resetState();
+			cash.setCash(JSON.stringify(state))
 			console.log('update: '+key);
 		}
 	}

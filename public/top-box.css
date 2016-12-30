@@ -1,0 +1,98 @@
+#top-box {
+  background: #0098ca;
+  left: 0;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  z-index: 910;
+  -webkit-transition: margin-top 0.2s linear;
+  transition: margin-top 0.2s linear;
+  min-height: 30px;
+  padding: 5px 0;
+  width: 100%;
+}
+#top-box .col-sm-6 {
+  float: left;
+  width: 50%;
+}
+#top-box .col-sm-6 .top-navbar {
+  background: none;
+  border: 0 none;
+  border-radius: 0;
+  height: auto;
+  margin: 0;
+  min-height: 30px;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers a {
+  font-size: 12px;
+  line-height: 22px;
+  padding: 9px 15px;
+  color: #fff;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers #customers-content {
+  border-radius: 3px 0 3px 3px;
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.9);
+  -moz-border-radius: 3px 0 3px 3px;
+  -webkit-border-radius: 3px 0 3px 3px;
+  padding: 15px;
+  width: 175px;
+  display: none;
+  z-index: 999;
+  background: #0098ca;
+  position: absolute;
+  top: 40px;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers #customers-content .nav {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  float: left;
+  margin: 0;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers #customers-content .nav li {
+  float: left;
+  position: relative;
+  display: block;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers #customers-content .nav li a {
+  font-size: 12px;
+  line-height: 22px;
+  padding: 9px 15px;
+  color: #fff;
+  position: relative;
+  display: block;
+  font-weight: bold;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers #customers-content .nav li a:hover {
+  background: #efefef;
+  color: #7b7b7b;
+  -webkit-transition: background .2s linear,color .2s linear;
+  transition: background .2s linear,color .2s linear;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers1 {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers1 a {
+  font-size: 12px;
+  line-height: 22px;
+  padding: 9px 15px;
+  color: #fff;
+}
+#top-box .col-sm-6 .top-navbar #login {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+#top-box .col-sm-6 .top-navbar #login a {
+  font-size: 12px;
+  line-height: 22px;
+  padding: 9px 15px;
+  color: #fff;
+}
+#top-box .col-sm-6 .top-navbar #login #login-content {
+  display: none;
+}
