@@ -2,8 +2,8 @@ var Client = require('ssh2-sftp-client');
 var sftp = new Client();
 var ftp = function() {
 	sftp.connect({
-	    host: '192.168.111.103',
-	    port: '22',
+	    host: '213.87.100.221',
+	    port: '8023',
 	    username: 'root',
 	    password: '12071995'
 	}).then(() => {
