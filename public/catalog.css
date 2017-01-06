@@ -1,3 +1,12 @@
+.products a {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+.products img {
+  width: 270px;
+  height: 270px;
+  background: #C3C3C3;
+}
 #catalog .page-header {
   margin: 0 0 15px;
   padding: 0;
@@ -35,10 +44,18 @@
   clear: both;
   margin-top: 20px;
 }
+#catalog .products .productyr a {
+  color: #1e1e1e;
+  text-decoration: none;
+}
 @media (min-width: 992px) {
   #catalog .products .productyr {
     width: 33.33333333%;
   }
+}
+#catalog .products .productyr img {
+  width: 270px;
+  height: 270px;
 }
 #catalog .products .productyr .actions a {
   display: inline-block;
@@ -72,6 +89,7 @@
   position: relative;
   float: left;
   color: #fff;
+  background-color: #0098ca;
 }
 #catalog .btn-group-sm .btn:first-child {
   -webkit-border-top-left-radius: 3px;
@@ -84,4 +102,57 @@
 #catalog .btn-group-sm .act {
   background-color: rgba(0, 152, 202, 0.7);
   color: white;
+}
+#catalog .list .product {
+  background: none;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  width: auto;
+}
+#catalog .list .product #search-actions a {
+  background: #fff;
+  display: inline-block;
+  height: 54px;
+  margin: 0 -2px;
+  padding-top: 19px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  width: 54px;
+  background: #f2f2f2;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+#catalog .list .product #search-actions a:hover {
+  color: white;
+  background-color: #0098ca;
+}
+#catalog .list .product #search-actions a:hover svg path {
+  fill: white;
+}
+#catalog .list .product .price {
+  font-size: 24px;
+  font-weight: 400;
+}
+#catalog .list .product #search-item-img {
+  width: 150px;
+  height: 120px;
+}
+#catalog .list .product #search-item-img .product-image {
+  background: #f7f7f7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+#catalog .list .product #search-item-img .product-image img {
+  width: 120px;
+  height: 120px;
 }

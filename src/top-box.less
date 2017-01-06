@@ -1,4 +1,7 @@
 #top-box {
+	
+  	
+
 	background: #0098ca;
     left: 0;
     margin-top: 0;
@@ -10,10 +13,20 @@
     min-height: 30px;
     padding: 5px 0;
     width: 100%;
+    @media (max-width: 991px){
+	    margin-top: 0;
+	    position: static;
+	}
     .col-sm-6 {
     	float: left;
 	    width: 50%;
+	    @media screen and (max-width:320px) {
+			width: auto;
+		}
 	    .top-navbar {
+	    	@media screen and (max-width:320px) {
+			  #stroikalk {display:none !important;}
+			}
 		    background: none;
 		    border: 0 none;
 		    border-radius: 0;
@@ -21,15 +34,22 @@
 		    margin: 0;
 		    min-height: 30px;
 		    .navbar-nav{
-		    	#customers{
-					margin-top: -5px;
-					margin-bottom: -5px;
+		    	li{
 		    		a{
 						font-size: 12px;
 						line-height: 22px;
 						padding: 9px 15px;
 						color: #fff;
+						@media screen and (max-width:320px) {
+					    	padding: 7px 9px;
+					    }
+
 		    		}
+		    	}
+		    	#customers{
+					margin-top: -5px;
+					margin-bottom: -5px;
+		    		
 		    		#customers-content{
 		    			border-radius: 3px 0 3px 3px;
 						-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
@@ -75,12 +95,7 @@
 		    	#customers1{
 		    		margin-top: -5px;
 					margin-bottom: -5px;
-		    		a{
-						font-size: 12px;
-						line-height: 22px;
-						padding: 9px 15px;
-						color: #fff;
-		    		}
+		    		
 		    	}
 		    }
 		    #login{
@@ -93,7 +108,48 @@
 					color: #fff;
 	    		}
 		    	#login-content{
+		    		right: 0px;
+   					width: 210px;
 		    		display: none;
+				    position: absolute;
+				    overflow: visible;
+				    top: 40px;
+				    height: 220px;
+				    z-index: 999;
+				    background: #0098ca;
+				    background-image: -webkit-gradient(linear,left top,left bottom,from(#0098ca),to(#00b2ec));
+				    background-image: -webkit-linear-gradient(top,#0098ca,#00b2ec);
+				    background-image: -moz-linear-gradient(top,#0098ca,#00b2ec);
+				    background-image: -ms-linear-gradient(top,#0098ca,#00b2ec);
+				    background-image: -o-linear-gradient(top,#0098ca,#00b2ec);
+				    background-image: linear-gradient(top,#0098ca,#00b2ec);
+				    padding: 15px;
+				    -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+				    -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+				    box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+				    -moz-border-radius: 3px 0 3px 3px;
+				    -webkit-border-radius: 3px 0 3px 3px;
+    				border-radius: 3px 0 3px 3px;
+    				.login {
+					    margin-bottom: 22px;
+					    input {
+						    margin: 5px;
+						    &[type='text']{
+						    	background-color: white;
+						    }
+						    
+						}
+						hr{
+							border-top: 1px solid rgba(0,0,0,.1);
+							margin: 5px auto 5px auto;
+						}
+						.loginza {
+						    padding-left: 5px!important;
+						    img {
+							    margin-top: 9px;
+							}
+						}
+					}
 		    	}
 		    }
 		}

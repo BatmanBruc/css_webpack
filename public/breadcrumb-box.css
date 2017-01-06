@@ -17,6 +17,11 @@
   text-shadow: none;
   display: inline-block;
 }
+.breadcrumb-box .breadcrumb li:nth-child(1):before {
+  content: "";
+  padding: 0 5px;
+  color: #ccc;
+}
 .breadcrumb-box .breadcrumb li:before {
   content: "/";
   padding: 0 5px;

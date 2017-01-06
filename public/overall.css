@@ -8,6 +8,9 @@
 h5 {
   margin: 0 0 4px;
 }
+li {
+  list-style: none;
+}
 body {
   font-family: 'Arimo', sans-serif;
   height: 100%;
@@ -66,4 +69,67 @@ img {
 .rating-box .rating svg polygon,
 .search-result .search-form .search-submit svg path {
   fill: #0098ca;
+}
+.slider.rs-slider {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-height: 300px;
+  margin-top: 32px;
+  background: none;
+  border: 0 none;
+  max-width: 1135px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.page-box-content {
+  padding-bottom: 310px;
+}
+.slider.rs-slider {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-height: 300px;
+  margin-top: 32px;
+  background: none;
+  border: 0 none;
+  max-width: 1135px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.infoblock {
+  width: 286px;
+  position: relative;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: -405px;
+  height: 405px;
+  z-index: 2;
+}
+.infoblock form {
+  margin-bottom: 22px;
+}
+.infoblock form label {
+  font-weight: 700;
+  margin: 0 0 3px;
+  display: block;
+}
+.infoblock form label .new-radio {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 7px;
+  cursor: pointer;
+  float: left;
+  height: 14px;
+  margin: 2px 0 0 -20px;
+  position: absolute;
+  width: 14px;
+}
+iframe {
+  max-width: 100%;
 }

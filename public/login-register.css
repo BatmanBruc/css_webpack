@@ -1,0 +1,16 @@
+.login-register {
+  margin-bottom: 80px;
+}
+.login-register .form-box {
+  background: #f2f2f2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0 0 40px;
+  padding: 27px 30px 25px;
+}
+.login-register .form-box .title {
+  font-weight: 400;
+  margin: 0 0 17px;
+  font-size: 32px;
+}

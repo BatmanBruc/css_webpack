@@ -1,0 +1,107 @@
+.rs-slider {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-height: 300px;
+    margin-top: 32px;
+    background: none;
+    border: 0 none;
+    max-width: 1135px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    @media(min-width: 1200px){
+        height: 293px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            position: absolute;
+            .title {
+                color: #fff;
+                font-size: 40px;
+                font-weight: 400;
+                margin: 0;
+                z-index: 1;
+            }
+            .description {
+                color: #fff;
+                font-size: 17px;
+                line-height: 25px;
+                margin: 0;
+                padding: 0 15px;
+            }
+            .tp-caption{
+                display: inline-block;
+                margin-bottom: 0;
+                font-weight: 400;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                position: absolute;
+                left: 19.3065px;
+                top: 189.032px;
+            }
+        }
+        
+    }
+
+    .tp-bannertimer {
+        background: #777!important;
+        background: rgba(0,0,0,0.1)!important;
+        height: 5px!important;
+        position: absolute;
+        z-index: 20;
+        top:0;
+
+    }
+    .tp-rightarrow{
+        
+        &:before{
+           content: '\e825'; 
+        }
+    }
+    .tp-leftarrow{
+        &:before{
+           content: '\e824'; 
+        }
+    }
+    .tparrows {
+        background: #0098ca;
+        background: rgba(30,30,30,0.5);
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 40px!important;
+        width: 40px!important;
+        -webkit-transition: background .3s linear;
+        transition: background .3s linear;
+        z-index: 50!important;
+        &:before {
+            font-family: 'revicons';
+            color: #fff;
+            font-style: normal;
+            font-weight: 400;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            margin-right: 0;
+            margin-top: 6px;
+            text-align: center;
+            width: 40px;
+            font-size: 19px;
+        }
+        &:hover{
+            background: #0098ca;
+        }
+
+    }
+
+    
+}
+
+

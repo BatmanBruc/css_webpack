@@ -1,9 +1,10 @@
+require('events').EventEmitter.prototype._maxListeners = 100;
 var Client = require('ssh2-sftp-client');
 var sftp = new Client();
 var ftp = function() {
 	sftp.connect({
-	    host: '213.87.100.221',
-	    port: '8023',
+	    host: '192.168.111.103',
+	    port: '22',
 	    username: 'root',
 	    password: '12071995'
 	}).then(() => {
@@ -13,6 +14,8 @@ var ftp = function() {
 	    sftp.end();
 	}).catch((err) => {
 	    console.log(err, 'catch error');
+	    sftp.end();
+	    ftp();
 	});
 }
 
