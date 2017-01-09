@@ -1,0 +1,336 @@
+.form-control {
+	border: 1px solid #e1e1e1;
+	-webkit-box-shadow: 0 1px #fff, inset 0 1px 4px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px #fff,inset 0 1px 4px rgba(0,0,0,.15);
+	box-shadow: 0 1px #fff, inset 0 1px 4px rgba(0,0,0,.15);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+	height: 30px;
+	line-height: 22px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	min-height: 30px;
+	padding: 8px 12px;
+	-webkit-appearance: none;
+	width: 100%;
+	&:focus {
+	        -webkit-box-shadow: 0 0 10px rgba(46,84,129,.3);
+    -moz-box-shadow: 0 0 10px rgba(46,84,129,.3);
+    box-shadow: 0 0 10px rgba(46,84,129,.3);
+    border: solid 1px #839bb7;
+    outline: none;
+    -webkit-transition: border linear .2s,box-shadow linear .2s;
+    -moz-transition: border linear .2s,box-shadow linear .2s;
+    transition: border linear .2s,box-shadow linear .2s;
+	}
+	}
+.page-header {
+    /* border-bottom: 1px solid #e1e1e1; */
+    border-bottom: 0px solid #eee;
+    margin: 0 0 15px;
+    padding: 0;
+    .title {
+		font-weight: 400;
+   		padding: 0;
+    	position: relative;
+    	font-size: 48px;
+	}
+}
+.product-page{
+	.add-cart-form {
+	    margin: 0 0 40px;
+	    .add-cart {
+		    font-weight: 700;
+		    margin: 0 17px 0 0;
+		    min-width: 290px;
+		    text-transform: uppercase;
+			font-size: 14px;
+			padding: 16px 45px;
+			background-color: #0098ca;
+			color:white;
+		}
+		.number {
+		    display: inline-block;
+		    vertical-align: top;
+		    label {
+			    color: #7f7f7f;
+			    font-weight: 400;
+			    line-height: 54px;
+			    margin: 0 7px 0 0;
+			    vertical-align: top;
+			}
+			input {
+			    color: #7f7f7f;
+			    display: inline-block;
+			    height: 54px;
+			    padding: 15px 12px;
+			    text-align: center;
+			    vertical-align: top;
+			    width: 80px;
+			}
+			.regulator {
+			    display: inline-block;
+			    vertical-align: top;
+			    a {
+				    background: url(../../../img/arrow-up.png) 50% 50% no-repeat #ccc;
+				    -webkit-border-radius: 2px;
+				    -moz-border-radius: 2px;
+				    border-radius: 2px;
+				    display: block;
+				    height: 24px;
+				    width: 24px;
+				    -webkit-transition: background-color .2s linear;
+				    transition: background-color .2s linear;
+				    &:hover{
+				    	background-color: #0098ca;
+				    }
+				}
+				.number-down {
+				    background: url(../../../img/arrow-down.png) 50% 50% no-repeat #ccc;
+				    margin: 6px 0 0;
+				}
+			}
+		}
+	}
+	.image-box {
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    overflow: hidden;
+	    position: relative;
+	    #thumblist{
+			a {
+			    background: #f7f7f7;
+			    display: block;
+			    float: left;
+			    height: 100px;
+			    margin: 0 10px;
+			    width: 100px;
+			}
+	    } 
+	    .general-img {
+		    background: #f7f7f7;
+		    -webkit-border-radius: 3px;
+		    -moz-border-radius: 3px;
+		    border-radius: 3px;
+		    overflow: hidden;
+		}
+		.thumblist-box {
+		    margin: 30px 0 0;
+		    max-height: 100px;
+		    overflow: hidden;
+		    padding: 0 54px;
+		    position: relative;
+		    .prev {
+			    background-color: #ccc;
+			    -webkit-border-radius: 3px;
+			    -moz-border-radius: 3px;
+			    border-radius: 3px;
+			    color: #fbfbfb;
+			    display: block;
+			    float: right;
+			    height: 40px;
+			    line-height: 40px;
+			    left: 0;
+			    margin: -20px 0 0;
+			    position: absolute;
+			    text-align: center;
+			    top: 50%;
+			    text-decoration: none;
+			    width: 40px;
+			    -webkit-transition: all .2s linear;
+			    transition: all .2s linear;
+			}
+			.next {
+			    background-color: #ccc;
+			    -webkit-border-radius: 3px;
+			    -moz-border-radius: 3px;
+			    border-radius: 3px;
+			    color: #fbfbfb;
+			    display: block;
+			    float: right;
+			    height: 40px;
+			    line-height: 40px;
+			    left: 0;
+			    margin: -20px 0 0;
+			    position: absolute;
+			    text-align: center;
+			    top: 50%;
+			    text-decoration: none;
+			    width: 40px;
+			    -webkit-transition: all .2s linear;
+			    transition: all .2s linear;
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+	.reviews-box {
+		margin: 0 0 38px;
+		color: #7f7f7f;
+		font-size: 12px;
+		line-height: 14px;
+		.rating-box {
+		    float: left;
+		    margin: 0 20px 0 0;
+		}
+
+	}
+	.description {
+	    color: #7f7f7f;
+	    font-size: 12px;
+	    line-height: 20px;
+	    margin: 0 0 32px;
+	}
+	.price-box {
+		    border-bottom-width: 1px;
+		    font-size: 48px;
+		    line-height: 1;
+		    margin: 0 0 40px;
+		    padding: 0 0 35px;
+		    position: static;
+		    text-align: left;
+		    .price-old {
+			    font-size: 30px;
+			}
+		}
+	
+
+	.product-tab {
+	    margin: 80px 0;
+
+	}
+}
+
+.product-tab{
+	margin: 80px 0;
+	.required {
+	    color: #c3293a;
+	    display: inline-block!important;
+	    font-size: 14px;
+	    width: 50%;
+	    .form-control {
+		    border: 1px solid #e1e1e1;
+		    -webkit-box-shadow: 0 1px #fff, inset 0 1px 4px rgba(0,0,0,.15);
+		    -moz-box-shadow: 0 1px #fff,inset 0 1px 4px rgba(0,0,0,.15);
+		    box-shadow: 0 1px #fff, inset 0 1px 4px rgba(0,0,0,.15);
+		    -webkit-border-radius: 3px;
+		    -moz-border-radius: 3px;
+		    border-radius: 3px;
+		    font-size: 12px;
+		    height: 30px;
+		    line-height: 22px;
+		    margin-bottom: 5px;
+		    margin-left: 5px;
+		    min-height: 30px;
+		    padding: 8px 12px;
+		    -webkit-appearance: none;
+		    width: 100%;
+		    &:focus {
+			    /* -webkit-box-shadow: 0 0 10px rgba(46,84,129,.3); */
+			    -moz-box-shadow: 0 0 10px rgba(46,84,129,.3);
+			    /* box-shadow: 0 0 10px rgba(46,84,129,.3); */
+			    border: solid 1px #839bb7;
+			    outline: none;
+			    -webkit-transition: border linear .2s,box-shadow linear .2s;
+			    -moz-transition: border linear .2s,box-shadow linear .2s;
+			    transition: border linear .2s,box-shadow linear .2s;
+			}
+		}
+	}
+}
+.evaluation {
+    float: left;
+    height: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 10px 14px 0;
+    .add-rating {
+	    float: left;
+	    margin: 0 0 0 10px;
+	    overflow: hidden;
+	    label {
+		    float: left;
+		    height: 30px;
+		    margin: 0 1px;
+		    padding: 0 0 0 14px;
+		    position: relative;
+		    width: 2px;
+		    .new-radio {
+			    margin: 0 0 0 -14px;
+			    -webkit-border-radius: 7px;
+				-moz-border-radius: 7px;
+				border-radius: 7px;
+				height: 14px;
+				width: 14px;
+				background: #fff;
+				border: 1px solid #ccc;
+				-webkit-border-radius: 7px;
+				-moz-border-radius: 7px;
+				border-radius: 7px;
+				cursor: pointer;
+				float: left;
+				margin: 2px 0 0 -10px;
+				position: absolute;
+
+				input {
+				    cursor: pointer;
+				    height: 100%;
+				    margin: 0;
+				    opacity: 0;
+				    filter: alpha(opacity=0);
+				    position: absolute;
+				    vertical-align: top;
+				    width: 100%;
+				    float: left;
+				}
+			}
+			.number {
+				    bottom: 0;
+				    color: #7f7f7f;
+				    font-size: 11px;
+				    line-height: 1;
+				    left: 3px;
+				    position: absolute;
+				}
+			.checked{
+               span{
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                    display: block;
+                    height: 6px;
+                    margin: 3px 0 0 3px;
+                    width: 6px;
+                    background: #0098ca;
+                } 
+            }
+		}
+	}
+}
+.form_element{
+		.btn{
+	    background: #0098ca;
+	    border: 0 none;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+	    color: #fff;
+	    line-height: 22px;
+	    outline: none;
+	    padding: 10px 20px;
+	    text-shadow: none;
+	    filter: none;
+	    -webkit-transition: background .2s linear,color .2s linear;
+	    transition: background .2s linear,color .2s linear;
+	    white-space: normal;
+	}
+	label{
+		width:100%;
+	}
+}

@@ -12,6 +12,9 @@
   padding: 0;
   position: relative;
 }
+.rs-slider:hover .tparrows {
+  visibility: visible;
+}
 @media (min-width: 1200px) {
   .rs-slider {
     height: 293px;
@@ -65,16 +68,16 @@
   content: '\e824';
 }
 .rs-slider .tparrows {
+  visibility: hidden;
   background: #0098ca;
-  background: rgba(30, 30, 30, 0.5);
+  opacity: 0.5;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   cursor: pointer;
   height: 40px!important;
   width: 40px!important;
-  -webkit-transition: background .3s linear;
-  transition: background .3s linear;
   z-index: 50!important;
+  transition: 1s;
 }
 .rs-slider .tparrows:before {
   font-family: 'revicons';
@@ -91,5 +94,12 @@
   font-size: 19px;
 }
 .rs-slider .tparrows:hover {
+  opacity: 1;
   background: #0098ca;
+  transition: 1s;
+}
+.rs-slider .tparrows:not(:hover) {
+  opacity: 0.5;
+  background: #0098ca;
+  transition: 1s;
 }

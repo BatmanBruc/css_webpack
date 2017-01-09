@@ -1,11 +1,58 @@
-.products a {
-  color: #1e1e1e;
-  text-decoration: none;
+.price-box {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
 }
-.products img {
+.price-box .price-old {
+  color: #7f7f7f;
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+}
+.price-box .price-old:before {
+  background: red;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  margin: 0 0 0 -23px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: rotate(330deg);
+  transform: rotate(330deg);
+  width: 46px;
+}
+.price-box .price {
+  font-weight: 700;
+}
+.productyr img {
   width: 270px;
   height: 270px;
-  background: #C3C3C3;
+}
+.productyr .actions a {
+  display: inline-block;
+  height: 54px;
+  margin: 0 -2px;
+  padding-top: 19px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  width: 138px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.productyr .actions a:hover {
+  background: white;
+}
+.product-image {
+  background: #f2f2f2;
+  display: inline-block;
+  line-height: 0;
+  width: 270px;
+  height: 270px;
 }
 #catalog .page-header {
   margin: 0 0 15px;
@@ -43,6 +90,34 @@
 #catalog .products {
   clear: both;
   margin-top: 20px;
+}
+#catalog .products .productyr .price-box {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+}
+#catalog .products .productyr .price-box .price-old {
+  color: #7f7f7f;
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+}
+#catalog .products .productyr .price-box .price-old:before {
+  background: red;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  margin: 0 0 0 -23px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: rotate(330deg);
+  transform: rotate(330deg);
+  width: 46px;
+}
+#catalog .products .productyr .price-box .price {
+  font-weight: 700;
 }
 #catalog .products .productyr a {
   color: #1e1e1e;
@@ -132,6 +207,25 @@
 #catalog .list .product #search-actions a:hover svg path {
   fill: white;
 }
+#catalog .list .product .price-old {
+  color: #7f7f7f;
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+}
+#catalog .list .product .price-old:before {
+  background: red;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  margin: 0 0 0 -23px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: rotate(330deg);
+  transform: rotate(330deg);
+  width: 46px;
+}
 #catalog .list .product .price {
   font-size: 24px;
   font-weight: 400;
@@ -155,4 +249,22 @@
 #catalog .list .product #search-item-img .product-image img {
   width: 120px;
   height: 120px;
+}
+/*Лидеры продаж*/
+.title-box {
+  margin-bottom: 0!important;
+}
+.title-box .title {
+  color: #7f7f7f;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  padding: 14px 0 0;
+}
+.rating-box {
+  background-image: url(../../../../img/svg/rating.svg), none;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 12px;
+  width: 73px;
 }

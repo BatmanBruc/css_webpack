@@ -11,6 +11,11 @@
     overflow: hidden;
     padding: 0;
     position: relative;
+    &:hover{
+        .tparrows{
+            visibility: visible;
+        }
+    }
     @media(min-width: 1200px){
         height: 293px;
     }
@@ -71,16 +76,16 @@
         }
     }
     .tparrows {
+        visibility: hidden;
         background: #0098ca;
-        background: rgba(30,30,30,0.5);
+        opacity: 0.5;
         -webkit-border-radius: 5px;
         border-radius: 5px;
         cursor: pointer;
         height: 40px!important;
         width: 40px!important;
-        -webkit-transition: background .3s linear;
-        transition: background .3s linear;
         z-index: 50!important;
+        transition: 1s;
         &:before {
             font-family: 'revicons';
             color: #fff;
@@ -96,8 +101,16 @@
             font-size: 19px;
         }
         &:hover{
+            opacity: 1;
             background: #0098ca;
+            transition: 1s;
         }
+        &:not(:hover){
+            opacity: 0.5;
+            background: #0098ca;
+            transition: 1s;
+        }
+
 
     }
 

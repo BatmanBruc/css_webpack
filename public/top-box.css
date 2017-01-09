@@ -53,6 +53,15 @@
 #top-box .col-sm-6 .top-navbar .navbar-nav #customers {
   margin-top: -5px;
   margin-bottom: -5px;
+  transition: 0.5s;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers:hover {
+  background: white;
+  transition: 0.5s;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers:hover a {
+  color: #7b7b7b;
+  transition: 0.5s;
 }
 #top-box .col-sm-6 .top-navbar .navbar-nav #customers #customers-content {
   border-radius: 3px 0 3px 3px;
@@ -80,6 +89,7 @@
   display: block;
 }
 #top-box .col-sm-6 .top-navbar .navbar-nav #customers #customers-content .nav li a {
+  transition: 0.5s;
   font-size: 12px;
   line-height: 22px;
   padding: 9px 15px;
@@ -97,6 +107,15 @@
 #top-box .col-sm-6 .top-navbar .navbar-nav #customers1 {
   margin-top: -5px;
   margin-bottom: -5px;
+  transition: 0.5s;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers1:hover {
+  background: white;
+  transition: 0.5s;
+}
+#top-box .col-sm-6 .top-navbar .navbar-nav #customers1:hover a {
+  color: #7b7b7b;
+  transition: 0.5s;
 }
 #top-box .col-sm-6 .top-navbar #login {
   margin-top: -5px;

@@ -5,6 +5,9 @@
     zoom: 1;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+a{
+    color: #7996b7;
+}
 h5{
 	margin: 0 0 4px;
 }
@@ -80,24 +83,71 @@ img{
     z-index: 2;
     form {
         margin-bottom: 22px;
+        .button{
+            padding: 3px 6px;
+            background: #0098ca;
+            color: white;
+        }
         label {
             font-weight: 700;
             margin: 0 0 3px;
             display: block;
             .new-radio {
+                background: #fff;
+                border: 1px solid #ccc;
                 -webkit-border-radius: 2px;
                 -moz-border-radius: 2px;
-                border-radius: 7px;
                 cursor: pointer;
                 float: left;
-                height: 14px;
                 margin: 2px 0 0 -20px;
                 position: absolute;
+                -webkit-border-radius: 7px;
+                -moz-border-radius: 7px;
+                border-radius: 7px;
+                height: 14px;
                 width: 14px;
+                input{
+                    cursor: pointer;
+                    height: 100%;
+                    margin: 0;
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                    position: absolute;
+                    vertical-align: top;
+                    width: 100%; 
+                }
+                
+
+            }
+            .checked{
+               span{
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                    display: block;
+                    height: 6px;
+                    margin: 3px 0 0 3px;
+                    width: 6px;
+                    background: #0098ca;
+                } 
             }
         }
     }
 }
 iframe{
     max-width: 100%;
+}
+
+.rating-box{
+    background-image: url(../../../img/svg/rating.svg),none;
+    .rating {
+        height: 12px;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        width: 73px;
+        *{
+            vertical-align: top;
+        }
+    }
 }

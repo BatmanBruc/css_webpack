@@ -35,6 +35,15 @@
 .sidebar .menu .sub li .sub > .active > a {
   color: #0098ca;
 }
+.sidebar .menu .sub li .sub > .active > a:hover {
+  color: white;
+}
+.sidebar .menu .sub li .sub > .active > a:hover .open-sub:after {
+  background: white;
+}
+.sidebar .menu .sub li .sub > .active > a:hover .open-sub:before {
+  background: white;
+}
 .sidebar .menu .sub li .sub > .active > a .open-sub:after {
   background: #0098ca;
 }
@@ -79,6 +88,12 @@
   background-color: #0098ca;
   color: white;
 }
+.sidebar .menu .active > a:hover .open-sub:after {
+  background: white;
+}
+.sidebar .menu .active > a:hover .open-sub:before {
+  background: white;
+}
 .sidebar .menu .active > a .open-sub:after {
   background: white;
   content: "";
@@ -116,7 +131,7 @@
   transition: all .2s linear;
 }
 .sidebar .menu li a:hover {
-  background-color: #e9e9e9;
+  background-color: white;
 }
 .sidebar .menu li a .open-sub {
   bottom: 0;

@@ -1,15 +1,69 @@
 
-.products{
-	a{
-		color: #1e1e1e;
-		text-decoration: none;
+.price-box{
+				position: absolute;
+				bottom: 0px;
+				text-align: center;
+				width: 100%;
+				.price-old{
+					color: #7f7f7f;
+				    display: inline-block;
+				    margin-right: 6px;
+				    position: relative;
+				    &:before {
+					    background: red;
+					    content: "";
+					    display: block;
+					    height: 1px;
+					    left: 50%;
+					    margin: 0 0 0 -23px;
+					    position: absolute;
+					    top: 50%;
+					    -webkit-transform: rotate(330deg);
+					    transform: rotate(330deg);
+					    width: 46px;
+					}
+				}
+			    .price {
+				    font-weight: 700;
+				}
+			}
+
+	.productyr{
+		
+		img{
+	    	width: 270px;
+	    	height: 270px;
+	    }
+		.actions{
+			a {
+			    display: inline-block;
+			    height: 54px;
+			    margin: 0 -2px;
+			    padding-top: 19px;
+			    text-align: center;
+			    text-decoration: none;
+			    vertical-align: top;
+			    width: 138px;
+			    -webkit-transition: all .2s linear;
+			    transition: all .2s linear;
+			    border-radius: 5px;
+			    transition: 0.3s;
+			    &:hover{
+			    	background: white;
+			    }
+
+			    
+			}
+		}
 	}
-	img{
-		width: 270px;
-		height: 270px;
-		background: #C3C3C3;
+	.product-image {
+	    background: #f2f2f2;
+	    display: inline-block;
+	    line-height: 0;
+	    width: 270px;
+	    height: 270px;
 	}
-}
+
 #catalog{
 	.page-header{
 		margin: 0 0 15px;
@@ -46,6 +100,34 @@
 		clear: both;
 		margin-top: 20px;
 		.productyr{
+			.price-box{
+				position: absolute;
+				bottom: 0px;
+				text-align: center;
+				width: 100%;
+				.price-old{
+					color: #7f7f7f;
+				    display: inline-block;
+				    margin-right: 6px;
+				    position: relative;
+				    &:before {
+					    background: red;
+					    content: "";
+					    display: block;
+					    height: 1px;
+					    left: 50%;
+					    margin: 0 0 0 -23px;
+					    position: absolute;
+					    top: 50%;
+					    -webkit-transform: rotate(330deg);
+					    transform: rotate(330deg);
+					    width: 46px;
+					}
+				}
+			    .price {
+				    font-weight: 700;
+				}
+			}
 			a{
 				color: #1e1e1e;
 				text-decoration: none;
@@ -150,6 +232,25 @@
 					}
 				}
 			}
+			.price-old{
+				color: #7f7f7f;
+			    display: inline-block;
+			    margin-right: 6px;
+			    position: relative;
+			    &:before {
+				    background: red;
+				    content: "";
+				    display: block;
+				    height: 1px;
+				    left: 50%;
+				    margin: 0 0 0 -23px;
+				    position: absolute;
+				    top: 50%;
+				    -webkit-transform: rotate(330deg);
+				    transform: rotate(330deg);
+				    width: 46px;
+				}
+			}
 		    .price {
 			    font-size: 24px;
 			    font-weight: 400;
@@ -177,7 +278,25 @@
 		}
 	}
 }
+/*Лидеры продаж*/
+.title-box{
+	margin-bottom: 0!important;
+	.title{
+		color: #7f7f7f;
+		font-size: 24px;
+		font-weight: 400;
+		margin: 0 0 12px;
+		padding: 14px 0 0;
+	}
+}
 
+.rating-box{
+	background-image: url(../../../../img/svg/rating.svg),none;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 12px;
+    width: 73px;
+}
 
 
 

@@ -1,0 +1,131 @@
+.basket .table-bordered {
+  border: 1px solid #ddd;
+}
+.basket .table {
+  border-bottom-width: 0;
+  margin: 0;
+}
+.basket .table th {
+  padding: 16px 30px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.basket .table .td-price {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  width: 112px;
+}
+.basket .table .td-qty {
+  min-width: 48px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  width: 100px;
+}
+.basket .table .td-qty .td-qty input {
+  margin: 0;
+  text-align: center;
+}
+.basket .table .td-qty .fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.basket .table .td-qty .fa:before {
+  content: "\f01e";
+}
+.basket .table .td-total {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  width: 102px;
+}
+.basket .table .td-remove {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  width: 60px;
+}
+.basket .table tbody td {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 30px;
+}
+.basket .table tbody .td-images {
+  width: 131px;
+}
+.basket .table tbody .td-name .product-name {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.basket .table tbody .td-name .product-name a {
+  color: black;
+  text-decoration: none;
+}
+.shopping-cart-table-button {
+  border-bottom-width: 1px;
+  border-right-width: 0;
+  margin: 0 0 40px;
+}
+.shopping-cart-table-button td {
+  border-left-width: 0;
+  border-top-width: 0;
+  height: 49px;
+  padding: 0;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 20px;
+  border-top: 1px solid #ddd;
+}
+.shopping-cart-table-button td a {
+  line-height: 22px;
+  color: #7f7f7f;
+  text-decoration: none;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+.shopping-cart-table-button td a i {
+  font-size: 17px;
+  line-height: 20px;
+  vertical-align: top;
+}
+.shopping-cart-table-button td a .fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.shopping-cart-table-button td a .fa:before {
+  content: "\f104";
+}
+.shopping-cart-table-button td a:hover {
+  color: #1e1e1e;
+  text-decoration: none;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+.shopping-cart-table-button td .update {
+  float: right;
+}
+.shopping-cart-table-button td .update .fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.shopping-cart-table-button td .update .fa:before {
+  content: "\f01e";
+}
