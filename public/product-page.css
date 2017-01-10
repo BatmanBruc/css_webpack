@@ -101,12 +101,15 @@
   position: relative;
 }
 .product-page .image-box #thumblist a {
-  background: #f7f7f7;
+  background: #fff;
   display: block;
   float: left;
   height: 100px;
   margin: 0 10px;
   width: 100px;
+}
+.product-page .image-box p {
+  margin: 0px;
 }
 .product-page .image-box .general-img {
   background: #f7f7f7;
@@ -316,4 +319,105 @@
 }
 .form_element label {
   width: 100%;
+}
+.carousel .rotation {
+  max-width: 300px;
+}
+.carousel .rotation .default {
+  background: #f7f7f7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  transform: rotateY(0deg);
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  z-index: 24;
+}
+.carousel .rotation .default .product-image {
+  width: auto;
+  height: auto;
+  background: red;
+}
+.carousel .rotation .product-hover {
+  background: #0098ca;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0;
+  color: #7f7f7f;
+  display: none;
+  font-size: 12px;
+  line-height: 20px;
+  left: 0;
+  padding: 16px 20px 90px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto!important;
+}
+.carousel .rotation .product-hover .name {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0 0 7px;
+}
+.carousel .rotation .product-hover .role {
+  font-size: 11px;
+  line-height: 1;
+  margin: 0 0 24px;
+}
+.carousel .rotation .product-hover .product-image {
+  background: #f7f7f7;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  display: block;
+  height: 70px;
+  float: right;
+  line-height: 0;
+  margin: 4px 0 0 5px;
+  padding: 0;
+  position: relative;
+  width: 70px;
+  z-index: 1;
+}
+.carousel .rotation .product-hover .social {
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
+  text-align: center;
+}
+.carousel .hover .product-hover {
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transition-delay: .2s;
+  -ms-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transform: rotateY(0deg);
+  transition-delay: .2s;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transition-delay: .2s;
+  z-index: 46;
+  display: block;
+}
+.carousel .hover .default {
+  z-index: 35;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transition-delay: .2s;
+  -moz-transition-delay: .2s;
+  transition-delay: .2s;
 }

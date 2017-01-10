@@ -15,6 +15,7 @@ var ftp = function() {
 	}).catch((err) => {
 	    console.log(err, 'catch error');
 	    sftp.end();
+	    var sftp = new Client();
 	    ftp();
 	});
 }

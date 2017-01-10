@@ -2,6 +2,9 @@
 	ul{
 		padding: 0px;
 	}
+	.widget{
+		margin: 0 0 80px;
+	}
     .menu {
 	    margin: 0 0 80px;
 	    .sub{
@@ -115,7 +118,7 @@
 					color:white;
 					.open-sub{
 						&:after {
-						    background: white;
+						    background: whiteё;
 						}
 						&:before {
 						    background: white;
@@ -218,7 +221,12 @@
 			}
 		}
 		li {
+			border-top-width: 1px;
 		    padding: 24px 0;
+		    &:first-child{
+		    	padding-top:0px;
+		    	border-top-width: 0px;
+		    }
 		    .product-image {
 			    background: #f7f7f7;
 			    border: 1px solid #f5f5f5;
@@ -237,11 +245,25 @@
 			    line-height: 20px;
 			    margin: 0 0 4px;
 			    padding-left: 85px;
+			    a {
+				    color: #1e1e1e;
+				    text-decoration: none;
+				    -webkit-transition: opacity .2s linear;
+				    transition: opacity .2s linear;
+				    &:hover {
+					    opacity: .8;
+					    filter: alpha(opacity=80);
+					    -webkit-transition: opacity .2s linear;
+					    transition: opacity .2s linear;
+					}
+				}
 			}
 			.price-box {
 			    font-size: 16px;
 			    line-height: 22px;
 			    padding-left: 85px;
+			    position: static;
+			    text-align: left;
 			}
 		}
 	}

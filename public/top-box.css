@@ -121,6 +121,14 @@
   margin-top: -5px;
   margin-bottom: -5px;
 }
+#top-box .col-sm-6 .top-navbar #login:hover {
+  background: white;
+  transition: 0.5s;
+}
+#top-box .col-sm-6 .top-navbar #login:hover > a {
+  color: #7b7b7b;
+  transition: 0.5s;
+}
 #top-box .col-sm-6 .top-navbar #login a {
   font-size: 12px;
   line-height: 22px;

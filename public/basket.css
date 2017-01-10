@@ -1,3 +1,7 @@
+.basket .product-image {
+  width: 70px;
+  height: 70px;
+}
 .basket .table-bordered {
   border: 1px solid #ddd;
 }
@@ -23,7 +27,7 @@
   text-align: center;
   width: 100px;
 }
-.basket .table .td-qty .td-qty input {
+.basket .table .td-qty input {
   margin: 0;
   text-align: center;
 }
@@ -128,4 +132,26 @@
 }
 .shopping-cart-table-button td .update .fa:before {
   content: "\f01e";
+}
+.bg {
+  background-color: #f2f2f2;
+}
+.car-bottom-box {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 27px 30px 30px;
+}
+.total {
+  padding-bottom: 26px;
+  text-align: right;
+}
+.total table {
+  margin: 0 0 32px auto;
+}
+.total .tr-total td {
+  font-size: 18px;
+  line-height: 30px;
+}
+.total .tr-total .price {
+  font-size: 30px;
 }
