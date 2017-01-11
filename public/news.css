@@ -1,0 +1,30 @@
+.blog .post {
+  margin-bottom: 40px;
+  padding: 0;
+  margin-top: -3px;
+  border-top-width: 1px;
+  padding-top: 37px;
+}
+.blog .post:nth-child(1) {
+  border-top-width: 0px;
+  margin-top: -3px;
+}
+.blog .post .entry-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 0 17px;
+}
+.blog .post .entry-title a {
+  color: #1e1e1e;
+  text-decoration: none;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+.blog .post .entry-content {
+  margin: 0 0 25px;
+}
+.blog .post .entry-meta {
+  color: #7f7f7f;
+  font-size: 12px;
+  line-height: 1.3;
+}

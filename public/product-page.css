@@ -320,10 +320,22 @@
 .form_element label {
   width: 100%;
 }
-.carousel .rotation {
-  max-width: 300px;
+/*С этими товарами покупают*/
+.carousel-box {
+  overflow: hidden;
 }
-.carousel .rotation .default {
+.carousel-box .carousel {
+  width: 1200px !important;
+}
+.carousel-box .carousel .product {
+  margin-top: 40px;
+}
+.carousel-box .carousel .product:hover .product-hover {
+  display: block;
+  -webkit-animation: fadeIn .8s;
+  animation: fadeIn .8s;
+}
+.carousel-box .carousel .product .default {
   background: #f7f7f7;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -342,12 +354,70 @@
   transition: all 0.6s ease-in-out;
   z-index: 24;
 }
-.carousel .rotation .default .product-image {
-  width: auto;
-  height: auto;
-  background: red;
+.carousel-box .carousel .product .default .product-image {
+  display: block;
+  line-height: 0;
+  margin: 0;
 }
-.carousel .rotation .product-hover {
+.carousel-box .carousel .product .default .product-image img {
+  width: 100%;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+.carousel-box .carousel .product .default .product-description {
+  background: #f2f2f2;
+  border-top: 1px solid #e1e1e1;
+  color: #505050;
+  display: table;
+  font-size: 13px;
+  height: 72px;
+  line-height: 18px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+.carousel-box .carousel .product .default .product-description .vertical {
+  display: table-cell;
+  height: 72px;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.carousel-box .carousel .product .default .product-description .vertical .product-name {
+  color: #1e1e1e;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0 0 4px;
+}
+.carousel-box .carousel .product .default .product-description .vertical .product-name a {
+  color: #1e1e1e;
+  text-decoration: none;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+.carousel-box .carousel .product .default .product-description .vertical .hidden {
+  display: none!important;
+  visibility: hidden!important;
+}
+.carousel-box .carousel .product .default .product-description .vertical .price {
+  font-weight: 700;
+}
+.carousel-box .carousel .product .product-hover {
+  height: inherit;
+  -webkit-transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-transform: rotateY(-180deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  transform: rotateY(-180deg);
+  -moz-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  width: 100%;
+  z-index: 13;
   background: #0098ca;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -356,8 +426,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   bottom: 0;
-  color: #7f7f7f;
-  display: none;
+  display: block;
   font-size: 12px;
   line-height: 20px;
   left: 0;
@@ -366,20 +435,24 @@
   right: 0;
   top: 0;
   width: auto!important;
+  color: white;
 }
-.carousel .rotation .product-hover .name {
-  color: #fff;
+.carousel-box .carousel .product .product-hover .product-name {
   font-size: 13px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 18px;
   margin: 0 0 7px;
 }
-.carousel .rotation .product-hover .role {
-  font-size: 11px;
+.carousel-box .carousel .product .product-hover .product-name a {
+  color: white;
+}
+.carousel-box .carousel .product .product-hover .price {
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1;
   margin: 0 0 24px;
 }
-.carousel .rotation .product-hover .product-image {
+.carousel-box .carousel .product .product-hover .product-image {
   background: #f7f7f7;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -394,25 +467,41 @@
   width: 70px;
   z-index: 1;
 }
-.carousel .rotation .product-hover .social {
+.carousel-box .carousel .product .product-hover .actions {
   bottom: 20px;
-  left: 20px;
+  left: 0;
   position: absolute;
   text-align: center;
+  width: 100%;
 }
-.carousel .hover .product-hover {
-  -moz-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transition-delay: .2s;
-  -ms-transition-delay: .2s;
-  -o-transition-delay: .2s;
-  transform: rotateY(0deg);
-  transition-delay: .2s;
-  -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -webkit-transition-delay: .2s;
+.carousel-box .carousel .product .product-hover .actions a {
+  background: #fff;
+  display: inline-block;
+  height: 54px;
+  margin: 0 -2px;
+  padding-top: 19px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  width: 54px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.carousel-box .carousel .product .product-hover .actions a:hover {
+  background: #f2f2f2;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.carousel-box .carousel .hover .product-hover {
   z-index: 46;
-  display: block;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transition-delay: .2s;
+  -moz-transition-delay: .2s;
+  transition-delay: .2s;
 }
-.carousel .hover .default {
+.carousel-box .carousel .hover .default {
   z-index: 35;
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -420,4 +509,64 @@
   -webkit-transition-delay: .2s;
   -moz-transition-delay: .2s;
   transition-delay: .2s;
+}
+.carousel-box .prev {
+  background-color: #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fbfbfb;
+  display: block;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 0 0 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 40px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.carousel-box .prev * {
+  vertical-align: middle;
+}
+.carousel-box .prev svg {
+  margin-left: 2px;
+}
+.carousel-box .prev:hover {
+  background-color: #0098ca;
+  color: #efefef;
+  text-decoration: none;
+  -webkit-transition: color 0.2s linear, background-color 0.2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+.carousel-box .next {
+  background-color: #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fbfbfb;
+  display: block;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 0 0 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 40px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.carousel-box .next * {
+  vertical-align: middle;
+}
+.carousel-box .next svg {
+  margin-left: 2px;
+}
+.carousel-box .next:hover {
+  background-color: #0098ca;
+  color: #efefef;
+  text-decoration: none;
+  -webkit-transition: color 0.2s linear, background-color 0.2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
 }

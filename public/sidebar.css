@@ -1,3 +1,6 @@
+.sidebar .active > .sub {
+  display: block !important;
+}
 .sidebar ul {
   padding: 0px;
 }
@@ -6,6 +9,35 @@
 }
 .sidebar .menu {
   margin: 0 0 80px;
+}
+.sidebar .menu > nav > ul > li > a {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.sidebar .menu > nav > ul > li > a:before {
+  background: #e1e1e1;
+  background: rgba(255, 255, 255, 0.4);
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 45px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+.sidebar .menu > nav > ul > li > a .item-icon {
+  left: 15px;
+  position: absolute;
+  top: 13px;
+  opacity: .5;
+}
+.sidebar .menu > nav > ul > .active {
+  color: white;
+}
+.sidebar .menu > nav > ul > .active > a > .fa {
+  opacity: .5;
+}
+.sidebar .menu > nav > ul > .active > a > .fa:before {
+  color: white;
 }
 .sidebar .menu .sub {
   background-color: #f2f2f2;
@@ -86,13 +118,14 @@
 }
 .sidebar .menu .active > a {
   background-color: #0098ca;
+  color: white;
 }
 .sidebar .menu .active > a:hover {
   background-color: #0098ca;
   color: white;
 }
 .sidebar .menu .active > a:hover .open-sub:after {
-  background: whiteё;
+  background: white;
 }
 .sidebar .menu .active > a:hover .open-sub:before {
   background: white;
@@ -240,4 +273,12 @@
   .mainrightbar header {
     display: none;
   }
+}
+.fa-gears:before {
+  content: "\f085";
+  color: #1e1e1e;
+}
+.fa-user:before {
+  content: "\f007";
+  color: #1e1e1e;
 }

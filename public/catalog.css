@@ -26,6 +26,13 @@
 .price-box .price {
   font-weight: 700;
 }
+.productyr .productyr-name a {
+  color: black;
+}
+.productyr .productyr-name a:hover {
+  color: gray;
+  text-decoration: none;
+}
 .productyr img {
   width: 270px;
   height: 270px;

@@ -1,4 +1,9 @@
 .sidebar{
+	.active{
+		&>.sub{
+			display:block !important;
+		}
+	} 
 	ul{
 		padding: 0px;
 	}
@@ -7,6 +12,37 @@
 	}
     .menu {
 	    margin: 0 0 80px;
+	    &>nav>ul>li>a{
+	    	background-color: rgba(0,0,0,.05);
+	    	&:before {
+			    background: #e1e1e1;
+			    background: rgba(255,255,255,.4);
+			    bottom: 0;
+			    content: "";
+			    display: block;
+			    left: 45px;
+			    position: absolute;
+			    top: 0;
+			    width: 1px;
+			}
+			.item-icon {
+			    left: 15px;
+			    position: absolute;
+			    top: 13px;
+			    opacity: .5;
+			}
+			
+	    }
+	    &>nav>ul>.active{
+	    	color:white;
+	    	&>a>.fa{
+	    		opacity: .5;
+				&:before{
+					color:white;
+					
+				}
+			}
+	    }
 	    .sub{
 	    	background-color: #f2f2f2;
     		background-color: rgba(0,0,0,.05);
@@ -113,12 +149,13 @@
     		}
     		&>a{
 	    	    background-color: #0098ca;
+	    	    color: white;
 				&:hover {
 					background-color: #0098ca;
 					color:white;
 					.open-sub{
 						&:after {
-						    background: whiteё;
+						    background: white;
 						}
 						&:before {
 						    background: white;
@@ -281,3 +318,12 @@
 	}
 	.mainrightbar header {display: none;}
 	}
+
+.fa-gears:before {
+    content: "\f085";
+    color: #1e1e1e;
+}
+.fa-user:before {
+    content: "\f007";
+    color: #1e1e1e;
+}

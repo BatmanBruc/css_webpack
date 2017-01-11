@@ -1,0 +1,28 @@
+
+.menu1 > div:nth-of-type(1), .menu1 #tab1:target ~ div:nth-of-type(1), .menu1 #tab2:target ~ div:nth-of-type(2), .menu1 #tab3:target ~ div:nth-of-type(3), .menu1 #tab4:target ~ div:nth-of-type(4), .menu1 #tab5:target ~ div:nth-of-type(5) {
+    display: block;
+}
+#tab1, #tab2, #tab3, #tab4, #tab5, .menu1 > div, .menu1 #tab2:target ~ div:nth-of-type(1), .menu1 #tab3:target ~ div:nth-of-type(1), .menu1 #tab4:target ~ div:nth-of-type(1), .menu1 #tab5:target ~ div:nth-of-type(1) {
+    display: none;
+}
+.menu1{
+	&>div{ 
+	    padding: 5px;
+	    border: 1px solid #e1e1e1;
+	}
+	&>a {
+	    line-height: 80px;
+	    background: #0098ca;
+	    text-decoration: none;
+	    color: #fff;
+	    margin: 7px;
+	    border-top-left-radius: 6px;
+	    border-top-right-radius: 6px;
+	    border-bottom-right-radius: 6px;
+	    border-bottom-left-radius: 6px;
+	    padding: 15px;
+	    cursor: pointer;
+	    font-family: 'Arimo',sans-serif;
+	    font-size: 21px;
+	}
+}
