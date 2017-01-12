@@ -4,6 +4,9 @@
   overflow-x: hidden;
 }
 #footer .footer-top {
+  background: white;
+  max-width: 1263px;
+  margin: auto;
   font-size: 12px;
   line-height: 21px;
   padding: 50px 0 13px;

@@ -1,0 +1,13 @@
+.table-bordered {
+  border-width: 0px !important;
+}
+.table-bordered .remove {
+  border-width: 0 !important;
+}
+.table-bordered .remove td {
+  border-width: 0 !important;
+}
+.table-bordered .btn {
+  background: #0098ca;
+  color: white;
+}

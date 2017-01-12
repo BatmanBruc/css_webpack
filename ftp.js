@@ -1,7 +1,8 @@
 require('events').EventEmitter.prototype._maxListeners = 100;
 var Client = require('ssh2-sftp-client');
-var sftp = new Client();
+
 var ftp = function() {
+	var sftp = new Client();
 	sftp.connect({
 	    host: '192.168.111.103',
 	    port: '22',
