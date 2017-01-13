@@ -113,6 +113,7 @@
 .basket .table {
   border-bottom-width: 0;
   margin: 0;
+  border-width: 1px!important;
 }
 .basket .table th {
   padding: 16px 30px 12px;
@@ -758,7 +759,7 @@
 }
 .title-box .title {
   color: #7f7f7f;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0 0 12px;
   padding: 14px 0 0;
@@ -1016,7 +1017,7 @@
 @media (max-width: 991px) {
   .header {
     margin-top: 0;
-    position: static;
+    position: relative;
   }
 }
 .header .logo-box {
@@ -1561,7 +1562,6 @@
 .header .right-box .right-box-wrapper #katt .primary .megamenu .sub .sub-wrapper .sub-list {
   width: 66%;
   display: table-cell;
-  padding: 35px 5px;
   vertical-align: top;
 }
 .header .right-box .right-box-wrapper #katt .primary .megamenu .sub .sub-wrapper .sub-list .box {
@@ -1595,6 +1595,8 @@
 .header .right-box .right-box-wrapper #katt .primary .megamenu .sub .sub-wrapper .sub-list .box .title a {
   width: 175px;
   padding: 0 0;
+  display: block;
+  font-weight: bold;
 }
 .header .right-box .right-box-wrapper #katt .primary .megamenu .sub .sub-wrapper .sub-list .box .title a:hover {
   opacity: .6;
@@ -1798,7 +1800,7 @@
   .header .primary .sub a:visited {
     padding: 4px 9px 4px 10px;
     /* width: auto!important; */
-    width: 60vw !important;
+    width: 58vw !important;
   }
   .header .primary .megamenu .title {
     padding: 4px 9px 4px 5px;
@@ -1966,6 +1968,27 @@ img {
   max-width: 100%;
   height: auto;
 }
+.errors {
+  background-color: #e16565;
+  color: #fff;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  padding-top: 15px;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50%;
+}
+.errors h4 {
+  font-size: 26px;
+  margin-top: 0;
+}
+.errors ul {
+  margin-bottom: 0;
+}
 .header .cart-header .dropdown-toggle,
 #footer .newsletter input:focus + .submit,
 .icon,
@@ -2052,6 +2075,17 @@ img {
   margin-bottom: -405px;
   height: 405px;
   z-index: 2;
+}
+@media (max-width: 1200px) {
+  .infoblock {
+    width: 240px;
+  }
+  .infoblock .vote_text {
+    font-size: 13px;
+  }
+  .infoblock label {
+    font-size: 13px;
+  }
 }
 .infoblock form {
   margin-bottom: 22px;
@@ -2453,6 +2487,11 @@ iframe {
   position: relative;
   font-size: 48px;
 }
+@media (max-width: 412px) {
+  .page-header .title {
+    font-size: 24px;
+  }
+}
 .product-page .add-cart-form {
   margin: 0 0 40px;
 }
@@ -2616,6 +2655,79 @@ iframe {
 }
 .product-tab {
   margin: 80px 0;
+}
+@media (max-width: 767px) {
+  .product-tab {
+    margin: 40px 0;
+  }
+  .product-tab .accordion-tab {
+    border: 0 none;
+    float: none;
+    width: 100%;
+  }
+  .product-tab .accordion-tab .tab-pane {
+    border: 0 none;
+    display: none;
+    font-size: 13px;
+    padding: 20px 0 30px;
+  }
+  .product-tab .accordion-tab .active .open-sub:after {
+    display: none;
+  }
+  .product-tab .accordion-tab .active a:focus {
+    color: white;
+    background: #1e1e1e;
+  }
+  .product-tab .accordion-tab > li {
+    float: none;
+    margin: 0 0 3px;
+  }
+  .product-tab .accordion-tab > li > a {
+    background-color: #1e1e1e;
+    border: 0 none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #fff;
+    padding: 9px 9px 9px 60px;
+  }
+  .product-tab .accordion-tab > li > a .open-sub:before {
+    background: white;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    margin: 19px 0 0 15px;
+    position: absolute;
+    top: 0;
+    width: 16px;
+  }
+  .product-tab .accordion-tab > li > a .open-sub:after {
+    background: white;
+    content: "";
+    display: block;
+    height: 16px;
+    left: 0;
+    margin: 19px 0 0 15px;
+    position: absolute;
+    top: 0;
+    width: 2px;
+    margin: 12px 0 0 22px;
+  }
+  .product-tab .accordion-tab > li > a:before {
+    background: #e1e1e1;
+    background: rgba(255, 255, 255, 0.4);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 45px;
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+  .product-tab .accordion-tab > li .product-page {
+    padding: 20px 0;
+  }
 }
 .product-tab .required {
   color: #c3293a;

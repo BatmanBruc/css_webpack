@@ -34,6 +34,27 @@ img{
 	max-width: 100%;
     height: auto;
 }
+.errors{
+   background-color: #e16565;
+    color: #fff;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    padding-top: 15px;
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    h4{
+        font-size: 26px;
+        margin-top: 0;
+    }
+    ul {
+        margin-bottom: 0;
+    }
+}
 .header .cart-header .dropdown-toggle, #footer .newsletter input:focus + .submit, .icon, .big-icon, .big-icon:visited, .service .icon, .close:hover, .close:focus, .img-thumbnail:hover .bg-images i:before, .box-404 h1, .gallery-images:hover .bg-images i:before, .features-block .header-box .icon-box, .features-block .header-box, .sidebar .newsletter input:focus + .submit, .sidebar .section .selected .close:hover, .package .title a, .package .price-box .price, .package .price-box .icon, .pricing .title a, .pricing .options li span, .pricing .options li.active, .banner-set .next:hover, .banner-set .prev:hover, .btn.btn-border, .btn.btn-border .caret, .product-remove:hover {
     color: #0098ca;
 }
@@ -89,6 +110,16 @@ img{
     margin-bottom: -405px;
     height: 405px;
     z-index: 2;
+    @media (max-width: 1200px) {
+        width:240px;
+       .vote_text{
+            font-size: 13px;
+        }
+        label{
+            font-size: 13px;
+        }
+    }
+    
     form {
         margin-bottom: 22px;
         .button{

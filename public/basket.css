@@ -8,6 +8,7 @@
 .basket .table {
   border-bottom-width: 0;
   margin: 0;
+  border-width: 1px!important;
 }
 .basket .table th {
   padding: 16px 30px 12px;

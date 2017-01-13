@@ -38,6 +38,11 @@
   position: relative;
   font-size: 48px;
 }
+@media (max-width: 412px) {
+  .page-header .title {
+    font-size: 24px;
+  }
+}
 .product-page .add-cart-form {
   margin: 0 0 40px;
 }
@@ -201,6 +206,79 @@
 }
 .product-tab {
   margin: 80px 0;
+}
+@media (max-width: 767px) {
+  .product-tab {
+    margin: 40px 0;
+  }
+  .product-tab .accordion-tab {
+    border: 0 none;
+    float: none;
+    width: 100%;
+  }
+  .product-tab .accordion-tab .tab-pane {
+    border: 0 none;
+    display: none;
+    font-size: 13px;
+    padding: 20px 0 30px;
+  }
+  .product-tab .accordion-tab .active .open-sub:after {
+    display: none;
+  }
+  .product-tab .accordion-tab .active a:focus {
+    color: white;
+    background: #1e1e1e;
+  }
+  .product-tab .accordion-tab > li {
+    float: none;
+    margin: 0 0 3px;
+  }
+  .product-tab .accordion-tab > li > a {
+    background-color: #1e1e1e;
+    border: 0 none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #fff;
+    padding: 9px 9px 9px 60px;
+  }
+  .product-tab .accordion-tab > li > a .open-sub:before {
+    background: white;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    margin: 19px 0 0 15px;
+    position: absolute;
+    top: 0;
+    width: 16px;
+  }
+  .product-tab .accordion-tab > li > a .open-sub:after {
+    background: white;
+    content: "";
+    display: block;
+    height: 16px;
+    left: 0;
+    margin: 19px 0 0 15px;
+    position: absolute;
+    top: 0;
+    width: 2px;
+    margin: 12px 0 0 22px;
+  }
+  .product-tab .accordion-tab > li > a:before {
+    background: #e1e1e1;
+    background: rgba(255, 255, 255, 0.4);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 45px;
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+  .product-tab .accordion-tab > li .product-page {
+    padding: 20px 0;
+  }
 }
 .product-tab .required {
   color: #c3293a;

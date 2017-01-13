@@ -22,7 +22,7 @@
 @media (max-width: 991px) {
   .header {
     margin-top: 0;
-    position: static;
+    position: relative;
   }
 }
 .header .logo-box {
@@ -567,7 +567,6 @@
 .header .right-box .right-box-wrapper #katt .primary .megamenu .sub .sub-wrapper .sub-list {
   width: 66%;
   display: table-cell;
-  padding: 35px 5px;
   vertical-align: top;
 }
 .header .right-box .right-box-wrapper #katt .primary .megamenu .sub .sub-wrapper .sub-list .box {
@@ -601,6 +600,8 @@
 .header .right-box .right-box-wrapper #katt .primary .megamenu .sub .sub-wrapper .sub-list .box .title a {
   width: 175px;
   padding: 0 0;
+  display: block;
+  font-weight: bold;
 }
 .header .right-box .right-box-wrapper #katt .primary .megamenu .sub .sub-wrapper .sub-list .box .title a:hover {
   opacity: .6;
@@ -804,7 +805,7 @@
   .header .primary .sub a:visited {
     padding: 4px 9px 4px 10px;
     /* width: auto!important; */
-    width: 60vw !important;
+    width: 58vw !important;
   }
   .header .primary .megamenu .title {
     padding: 4px 9px 4px 5px;

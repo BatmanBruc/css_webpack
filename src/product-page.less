@@ -36,6 +36,9 @@
    		padding: 0;
     	position: relative;
     	font-size: 48px;
+    	@media (max-width: 412px) {
+    		font-size: 24px;
+    	}
 	}
 }
 .product-page{
@@ -209,7 +212,87 @@
 }
 
 .product-tab{
+	@media (max-width: 767px){
+	    margin: 40px 0;
+	    .accordion-tab{
+		    border: 0 none;
+		    float: none;
+		    width: 100%;
+		    .tab-pane {
+			    border: 0 none;
+			    display: none;
+			    font-size: 13px;
+			    padding: 20px 0 30px;
+			}
+			.active{
+				.open-sub{
+					&:after{
+							display: none;
+						}
+				}
+				a {
+				    &:focus {
+					    color:white;
+					    background: #1e1e1e;
+					}
+				}
+			}
+			&>li {
+			    float: none;
+			    margin: 0 0 3px;
+			    &>a {
+				    background-color: #1e1e1e;
+				    border: 0 none;
+				    -webkit-border-radius: 0;
+				    -moz-border-radius: 0;
+				    border-radius: 0;
+				    color: #fff;
+				    padding: 9px 9px 9px 60px;
+				    .open-sub{
+				    	&:before {
+						    background: white;
+						    content: "";
+						    display: block;
+						    height: 2px;
+						    left: 0;
+						    margin: 19px 0 0 15px;
+						    position: absolute;
+						    top: 0;
+						    width: 16px;
+						}
+						&:after{
+							background: white;
+						    content: "";
+						    display: block;
+						    height: 16px;
+						    left: 0;
+						    margin: 19px 0 0 15px;
+						    position: absolute;
+						    top: 0;
+						    width: 2px;
+						    margin: 12px 0 0 22px;
+						}
+				    }
+				    &:before {
+					    background: #e1e1e1;
+					    background: rgba(255,255,255,.4);
+					    bottom: 0;
+					    content: "";
+					    display: block;
+					    left: 45px;
+					    position: absolute;
+					    top: 0;
+					    width: 1px;
+					}
+				}
+				.product-page {
+				    padding: 20px 0;
+				}
+			}
+		}
+	}
 	margin: 80px 0;
+
 	.required {
 	    color: #c3293a;
 	    display: inline-block!important;
